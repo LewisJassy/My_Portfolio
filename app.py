@@ -14,9 +14,6 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite3'
 # sqlite3 database
 db = SQLAlchemy(app)
 
-# db migration conf
-migrate = Migrate(app, db)
-
 # Models
 class Contact(db.Model):
     no = db.Column(db.Integer, primary_key=True)
