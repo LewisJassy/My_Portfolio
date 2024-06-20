@@ -58,3 +58,24 @@ if (currentTheme) {
     toggleSwitch.checked = true;
   }
 }
+// controll the navbar visibility on scroll
+let lastScrollTop = 0;
+let isScrolling;
+const navbar = document.querySelector('.navbar');
+
+window.addEventListener('scroll', function() {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrollTop > lastScrollTop) {
+        // Clear our timeout throughout the scroll
+        window.clearTimeout(isScrolling);
+        
+        // Set a timeout to run after scrolling ends
+        isScrolling = setTimeout(function() {
+            // Run the callback
+            navbar.classList.add('hide-nav');
+        }, 66);
+    } else {
+        navbar.classList.remove('hide-nav');
+    }
+    lastScrollTop = scrollTop;
+});
