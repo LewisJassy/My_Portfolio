@@ -422,3 +422,53 @@ padding:12px;
     font-size:2em;
     vertical-align:middle;
 }
+/* 
+@keyframes backgroundChange {
+  0% { background-color: #1a1a1a; }
+  50% { background-color: #333; }
+  100% { background-color: #1a1a1a; }
+}
+
+body {
+  animation: backgroundChange 5s infinite;
+} */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  color: white;
+}
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('background.jpg') no-repeat center center/cover;
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.hero-content {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+.parallax {
+  background-image: url('background.jpg');
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.asterisk-list li::before {
+  content: "* ";
+}
