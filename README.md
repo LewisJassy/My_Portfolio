@@ -1,19 +1,6 @@
 # Personal Portfolio website
 
-Light and Dark Theme Personal Portfolio Website written using Flask Framework in Python.
-
-## Screenshots
-- Light Theme Cropped
-
-  ![Light Theme Cropped](https://github.com/dmdhrumilmistry/Flask-Portfolio/blob/main/.images/Light-Homepage-Crop.png?raw=True)
-  
-- Light Theme
-
-  ![Light Theme](https://github.com/dmdhrumilmistry/Flask-Portfolio/blob/main/.images/Light-Homepage.png?raw=True)
-
-- Dark Theme
-
-  ![Dark Theme](https://github.com/dmdhrumilmistry/Flask-Portfolio/blob/main/.images/Dark-Homepage.png?raw=True)
+Personal Portfolio Website written using Flask Framework in Python.
 
 ## Technologies Used
 - Frontend
@@ -32,12 +19,12 @@ Light and Dark Theme Personal Portfolio Website written using Flask Framework in
 
 - Clone repo
     ```bash
-    git clone --depth=1 https://github.com/dmdhrumilmistry/Flask-Portfolio
+    git clone --depth=1 https://github.com/LewisJassy/My_Portfolio
     ```
 
 - Change directory
     ```bash
-    cd Flask-Portfolio
+    cd My_Portfolio
     ```
 
 - Install Project requirements
@@ -61,11 +48,11 @@ Light and Dark Theme Personal Portfolio Website written using Flask Framework in
 ## Deploy using Docker
 - Build image
   ```bash
-  docker build -t flask-portfolio .
+  docker build -t my_portfolio .
   ```
 - Run image
   ```bash
-  docker run -d -p 8080:8080 flask-portfolio
+  docker run -d -p 8080:8080 my_portfolio
   ```
 
 ## TODO
