@@ -333,6 +333,13 @@ body {
   }
 }
 
+@media (max-width: 600px) {
+  .container {
+      width: 100%;
+      margin: 0;
+  }
+}
+
 /* Text Card */
 .textcard {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -351,6 +358,7 @@ body {
 img {
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 100%;
   height: auto;
 }
 
@@ -474,4 +482,9 @@ body {
 
 .asterisk-list li::before {
   content: "* ";
+}
+
+.container {
+  width: 80%;
+  margin: auto;
 }
