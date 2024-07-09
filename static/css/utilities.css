@@ -145,4 +145,13 @@ h2::selection {
   .content-text h2 {
     font-size: 2.5rem;
   }
+
+  .container {
+    padding: 1rem;
+  }
+
+  .btn {
+    padding: 0.5rem 1.5rem;
+    font-size: 0.7rem;
+  }
 }

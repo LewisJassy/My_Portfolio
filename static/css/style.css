@@ -1,11 +1,7 @@
 .hide-nav {
   transform: translateY(-100%);
   transition: transform 0.3s ease-in-out;
-}/* This is the required project styling. Will contain essential CSS styles like:
-   * Flex property
-   * Grid layout
-   * Cards and sections
-*/ 
+}
 
 @import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 
@@ -20,7 +16,6 @@
   --bg-secondary: #000000;
   --card-background: #f4f4f4;
   --bg-secondary-two: #111111;
-
   --shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
 
   /* Font Weight */
@@ -147,19 +142,16 @@ body {
   width: 150px;
   border-radius: 50%;
   animation: bounce 1s infinite alternate;
-
 }
 
 @keyframes bounce {
   from {
     transform: translateY(0px);
   }
-
   to {
     transform: translateY(-10px);
   }
 }
-
 
 .division {
   width: 100%;
@@ -254,15 +246,17 @@ body {
 }
 
 /* Responsiveness */
-
 @media (max-width: 1000px) {
   .project {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+  .project {
+    grid-template-columns: 1fr;
+  }
+}
 
 @media (max-width: 670px) {
   .navbar .nav-menu {
@@ -327,16 +321,9 @@ body {
 }
 
 @media (max-width: 600px) {
-  .project {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 600px) {
   .container {
-      width: 100%;
-      margin: 0;
+    width: 100%;
+    margin: 0;
   }
 }
 
@@ -345,16 +332,14 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 5px;
-  /* 5px rounded corners */
   padding: 10px;
 }
 
-/* On mouse-over, add a deeper shadow */
 .textcard:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-/* Add rounded corners to the top left and the top right corner of the image */
+/* Images */
 img {
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -366,7 +351,7 @@ img {
   box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
 }
 
-/* For Contact Form */
+/* Contact Form */
 input[type=text],
 input[type=email],
 select,
@@ -406,43 +391,45 @@ input[type=submit]:hover {
 
 /* Messages */
 @import url('//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
- 
-.isa_info, .isa_success, .isa_warning, .isa_error {
-margin: 10px 0px;
-padding:12px;
- 
-}
-.isa_info {
-    color: #00529B;
-    background-color: #BDE5F8;
-}
-.isa_success {
-    color: #4F8A10;
-    background-color: #DFF2BF;
-}
-.isa_warning {
-    color: #9F6000;
-    background-color: #FEEFB3;
-}
+
+.isa_info,
+.isa_success,
+.isa_warning,
 .isa_error {
-    color: #D8000C;
-    background-color: #FFD2D2;
-}
-.isa_info i, .isa_success i, .isa_warning i, .isa_error i {
-    margin:10px 22px;
-    font-size:2em;
-    vertical-align:middle;
-}
-/* 
-@keyframes backgroundChange {
-  0% { background-color: #1a1a1a; }
-  50% { background-color: #333; }
-  100% { background-color: #1a1a1a; }
+  margin: 10px 0px;
+  padding: 12px;
 }
 
-body {
-  animation: backgroundChange 5s infinite;
-} */
+.isa_info {
+  color: #00529b;
+  background-color: #bde5f8;
+}
+
+.isa_success {
+  color: #4f8a10;
+  background-color: #dff2bf;
+}
+
+.isa_warning {
+  color: #9f6000;
+  background-color: #feefb3;
+}
+
+.isa_error {
+  color: #d8000c;
+  background-color: #ffd2d2;
+}
+
+.isa_info i,
+.isa_success i,
+.isa_warning i,
+.isa_error i {
+  margin: 10px 22px;
+  font-size: 2em;
+  vertical-align: middle;
+}
+
+/* Hero and Background */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -450,6 +437,7 @@ body {
   background: linear-gradient(to right, #ff7e5f, #feb47b);
   color: white;
 }
+
 .hero {
   height: 100vh;
   display: flex;
@@ -458,6 +446,7 @@ body {
   background: url('background.jpg') no-repeat center center/cover;
   position: relative;
 }
+
 .overlay {
   position: absolute;
   top: 0;
@@ -466,11 +455,13 @@ body {
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
 }
+
 .hero-content {
   position: relative;
   text-align: center;
   z-index: 1;
 }
+
 .parallax {
   background-image: url('background.jpg');
   height: 500px;
